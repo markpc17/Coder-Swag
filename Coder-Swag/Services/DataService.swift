@@ -32,11 +32,11 @@ class DataService {
     ]
 
     private let shirts = [
-        Product(title: "Devslopes Logo Shirt Black", price: "£50", imageName: "shirt01.png"),
-        Product(title: "Devslopes Badge Shirt Light Grey", price: "£45", imageName: "shirt02.png"),
-        Product(title: "Devslopes Logo Shirt Red", price: "£50", imageName: "shirt03.png"),
-        Product(title: "Hustle Delegate Grey", price: "£40", imageName: "shirt04.png"),
-        Product(title: "Kickflip Studios Black", price: "£35", imageName: "shirt05.png")
+        Product(title: "Devslopes Logo Shirt Black", price: "£20", imageName: "shirt01.png"),
+        Product(title: "Devslopes Badge Shirt Light Grey", price: "£25", imageName: "shirt02.png"),
+        Product(title: "Devslopes Logo Shirt Red", price: "£25", imageName: "shirt03.png"),
+        Product(title: "Hustle Delegate Grey", price: "£15", imageName: "shirt04.png"),
+        Product(title: "Kickflip Studios Black", price: "£25", imageName: "shirt05.png")
     ]
     
     private let digitalGoods = [Product]()
@@ -49,6 +49,8 @@ class DataService {
         switch title {
         case "SHIRTS":
             return getShirts()
+        case "HOODIES":
+            return getHoodies()
         case "HATS":
             return getHats()
         case "GOODIES":
